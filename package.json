@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dmuthui/MoringaProjects-Week4IP-Expressnote/issues"
   },
-  "homepage": "https://github.com/dmuthui/MoringaProjects-Week4IP-Expressnote#readme"
+  "homepage": "https://github.com/dmuthui/MoringaProjects-Week4IP-Expressnote#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
