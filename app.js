@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 
-// formData => req.body
+formData => req.body
 app.use(express.json()); // application/json
 app.use(express.urlencoded({extended: true}));
 
