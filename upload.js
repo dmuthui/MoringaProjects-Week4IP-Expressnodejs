@@ -1,4 +1,3 @@
-
 const multer = require('multer');
 const path = require('path');
 
@@ -17,7 +16,7 @@ const upload = multer({
     limits: {fileSize: 1000000},
     fileFilter: function(req,file, cb){
         // Allowed extensions
-        let fileTypes = /jpg|jpeg|pdf|png|gif/;
+        let fileTypes = /jpg|jpeg|png|gif/;
         // check file extension
         let extname = fileTypes.test(path.extname(file.originalname).toLowerCase());
         // check mime type
@@ -30,7 +29,7 @@ const upload = multer({
         }
     }
  }).single('image');
- 
- 
- 
- module.exports = upload;
+
+
+
+module.exports = upload;
