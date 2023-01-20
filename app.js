@@ -2,10 +2,6 @@
 const express = require('express');
 let indexRouter = require('./routes/index');
 let search_router = require('./routes/search');
-<<<<<<< HEAD
-=======
-
->>>>>>> 57865ab916029e40d618c4ce9964fd6bc45381fd
 // Initialize express
 const app = express();
 
@@ -16,18 +12,11 @@ app.set('view engine', 'ejs');
 // Set a static folder
 app.use(express.static('public'));
 
-<<<<<<< HEAD
 // formData => req.body
 
 app.use(express.json()); // application/json
 
 app.use(express.urlencoded({ extended: true }));
-=======
-
-formData => req.body
-app.use(express.json()); // application/json
-app.use(express.urlencoded({extended: true}));
->>>>>>> 57865ab916029e40d618c4ce9964fd6bc45381fd
 
 // Define the index router
 app.use('/', indexRouter);
@@ -43,18 +32,10 @@ let DB_URL = process.env.DB_URL
 let db_url = "mongodb+srv://" + DB_USER + ":" + DB_PASS + "@galleryapp.cvf8vcz.mongodb.net/" + DB_NAME;
 console.log(db_url);
 let option = {
-<<<<<<< HEAD
     maxPoolSize: 20,
     family: 4
 };
 mongoose.connect(db_url, option);
-=======
-    maxPoolSize:20,
-    family:4
-};
-
-mongoose.connect(DB_URL,option);
->>>>>>> 57865ab916029e40d618c4ce9964fd6bc45381fd
 let db = mongoose.connection
 db.once("open", () => {
     console.log("Successful connection to the database");
@@ -67,12 +48,6 @@ db.on("error", () => {
 // Define the port number
 const PORT = 5000;
 
-<<<<<<< HEAD
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`)
 });
-=======
-app.listen(PORT, ()=>{
-   console.log(`Server is listening on port ${PORT}`)
-});
->>>>>>> 57865ab916029e40d618c4ce9964fd6bc45381fd
