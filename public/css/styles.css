@@ -1,8 +1,10 @@
 body{
-    background-color: #87c24c;
+    background-color: #718063;
  }
+
  h1{
-    color: blue;
+    text-align:center;
+    text-size-adjust: 20px;
  }
 
  .button {
@@ -39,4 +41,7 @@ body{
    background-color: #008CBA;
    color: white;
  }
- 
+
+ #socialtools{
+  margin-left: 20%;
+}
